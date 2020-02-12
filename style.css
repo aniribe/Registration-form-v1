@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #11191a;
+  font-family: "Indie Flower", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: url(images/be_by_balint4.jpg);
+  background-color: #10181b;
+  background-size: cover;
+  background-position: -150px 0px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 10px 5px 20px 10px rgba(0, 0, 0, 0.6);
+  width: 800px;
+}
+
+h2 {
+  color: #15cd99;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+  width: 41%;
+  position: relative;
+  left: 65%;
+  display: inline-block;
+  background-color: #132122;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-left: 4px solid #0d8a66;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border: none;
+  background-color: rgba(15, 187, 138, 0.4);
+  border-radius: 20px;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  margin-top: 5px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  font-family: sans-serif, serif;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #0d8a66;
+  border: 2px solid #0f946e;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.form button:focus {
+  outline: none;
+}
+
+.form button:hover {
+  box-shadow: 8px 5px 15px 5px rgba(0, 0, 0, 0.7);
+}
